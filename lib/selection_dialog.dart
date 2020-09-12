@@ -1,4 +1,6 @@
-import 'country_code.dart';
+import 'package:country_code_picker/country_code.dart';
+import 'package:flutter/material.dart';
+
 /// selection dialog used for selection of the country code
 class SelectionDialog extends StatefulWidget {
   final List<CountryCode> elements;
