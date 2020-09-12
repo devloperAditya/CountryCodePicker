@@ -1,6 +1,4 @@
-import 'package:country_code_picker/country_code.dart';
-import 'package:flutter/material.dart';
-
+import 'country_code.dart';
 /// selection dialog used for selection of the country code
 class SelectionDialog extends StatefulWidget {
   final List<CountryCode> elements;
@@ -55,6 +53,7 @@ class _SelectionDialogState extends State<SelectionDialog> {
               iconSize: 20,
               icon: Icon(
                 Icons.close,
+                color: Colors.white,
               ),
               onPressed: () => Navigator.pop(context),
             ),
@@ -74,6 +73,7 @@ class _SelectionDialogState extends State<SelectionDialog> {
             width: widget.size?.width ?? MediaQuery.of(context).size.width,
             height:
                 widget.size?.height ?? MediaQuery.of(context).size.height * 0.7,
+            color: Colors.black,
             child: ListView(
               children: [
                 widget.favoriteElements.isEmpty
